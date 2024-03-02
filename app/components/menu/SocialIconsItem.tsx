@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react';
 import { type ReactNode } from 'react';
 
 interface Props {
@@ -13,9 +14,9 @@ export default function SocialIconsItem({
 }: Props) {
   return (
     <li>
-      <a href={href} className="w-7 h-7">
+      <Link to={href} className="w-7 h-7">
         <div className={className}>{children}</div>
-      </a>
+      </Link>
     </li>
   );
 }
