@@ -39,7 +39,7 @@
 
 ## 🚀 デプロイ
 
-mainブランチのCIが通過し次第、 [Cloudflare Pages](https://pages.cloudflare.com/) に自動デプロイされます。
+mainブランチのCIが通過でき次第、 [Cloudflare Pages](https://pages.cloudflare.com/) に自動デプロイされます。
 
 ## ⚖️ ライセンス
 
