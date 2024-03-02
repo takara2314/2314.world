@@ -22,8 +22,8 @@ const currentPath = Astro.url.pathname;
 
       <div
         class={currentPath === href
-          ? "w-full h-full text-lime-950 pointer-events-none flex flex-col items-center justify-center absolute top-0 left-0"
-          : "w-full h-full pointer-events-none flex flex-col items-center justify-center absolute top-0 left-0"}
+          ? "w-full h-full text-lime-950 text-xl pointer-events-none flex flex-col items-center justify-center absolute top-0 left-0"
+          : "w-full h-full text-xl pointer-events-none flex flex-col items-center justify-center absolute top-0 left-0"}
       >
         {label}
       </div>
