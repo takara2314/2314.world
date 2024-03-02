@@ -23,9 +23,11 @@
 
 [2314.world](https://2314.world/)
 
-## 💻 コマンド
+## 🛠 前提
 
-All commands are run from the root of the project, from a terminal:
+- Node.js v20+
+
+## 💻 コマンド
 
 | コマンド         | 説明                                           |
 | :-------------- | :-------------------------------------------- |
