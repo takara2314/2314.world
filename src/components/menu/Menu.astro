@@ -1,0 +1,16 @@
+---
+import Hero from "./Hero.astro";
+import PageSelector from "./PageSelector.astro";
+import Copyright from "./Copyright.astro";
+---
+
+<menu
+  class="w-[20rem] h-full text-center bg-white rounded-r-2xl fixed top-0 left-0"
+>
+  <Hero />
+  <PageSelector />
+
+  <div class="pt-5 w-full border-t-2 border-gray-300 absolute bottom-4">
+    <Copyright />
+  </div>
+</menu>

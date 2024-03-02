@@ -1,0 +1,32 @@
+---
+interface Props {
+  label: string;
+  href: string;
+}
+
+const { label, href } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<li>
+  <a href={href}>
+    <div class="w-full h-10 relative">
+      {
+        currentPath === href ? (
+          <div class="w-11/12 h-full bg-lime-200 rounded-r-full absolute top-0 left-0" />
+        ) : (
+          <div class="w-11/12 h-full hover:bg-gray-200 rounded-r-full transition-colors duration-150 absolute top-0 left-0" />
+        )
+      }
+
+      <div
+        class={currentPath === href
+          ? "w-full h-full text-lime-950 pointer-events-none flex flex-col items-center justify-center absolute top-0 left-0"
+          : "w-full h-full pointer-events-none flex flex-col items-center justify-center absolute top-0 left-0"}
+      >
+        {label}
+      </div>
+    </div>
+  </a>
+</li>
