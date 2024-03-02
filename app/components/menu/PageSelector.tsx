@@ -7,23 +7,23 @@ const pages = [
   },
   {
     label: 'できること',
-    href: '/skills/',
+    href: '/skills',
   },
   {
     label: '作ったもの',
-    href: '/works/',
+    href: '/works',
   },
   {
     label: '好きなもの',
-    href: '/favorites/',
+    href: '/favorites',
   },
   {
     label: 'ラボ',
-    href: '/lab/',
+    href: '/lab',
   },
   {
     label: 'お問い合わせ',
-    href: '/contact/',
+    href: '/contact',
   },
 ];
 

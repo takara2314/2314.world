@@ -1,3 +1,5 @@
+import { Link } from '@remix-run/react';
+
 interface Props {
   label: string;
   href: string;
@@ -11,7 +13,7 @@ export default function PageSelectorItem({
 
   return (
     <li>
-      <a href={href}>
+      <Link to={href}>
         <div className="w-full h-10 relative">
           {currentPath === href ? (
             <div className="w-11/12 h-full bg-lime-200 rounded-r-full absolute top-0 left-0" />
@@ -29,7 +31,7 @@ export default function PageSelectorItem({
             {label}
           </div>
         </div>
-      </a>
+      </Link>
     </li>
   );
 }
