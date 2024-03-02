@@ -1,21 +1,17 @@
 import type { MetaFunction } from '@remix-run/node';
-import { Outlet } from '@remix-run/react';
-import Menu from '~/components/menu/Menu';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
-    { name: 'description', content: 'Welcome to Remix!' },
+    { title: 'たからーん（濱口 宝）' },
+    {
+      name: 'description',
+      content: '僕について紹介します！',
+    },
   ];
 };
 
-export default function Index() {
+export default function Page() {
   return (
-    <div className="w-full h-full flex flex-row justify-end">
-      <Menu />
-      <div className="w-[calc(100%-20rem+1rem)] h-full text-white bg-sky-400">
-        <Outlet />
-      </div>
-    </div>
+    <main className="pl-4">たからーん（濱口 宝）</main>
   );
 }

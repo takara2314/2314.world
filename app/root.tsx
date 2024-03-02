@@ -9,6 +9,7 @@ import {
 } from '@remix-run/react';
 
 import stylesheet from '~/tailwind.css';
+import Menu from './components/menu/Menu';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
@@ -31,8 +32,15 @@ export default function App() {
         <Meta />
         <Links />
       </head>
+
       <body className="w-dvw h-dvh text-lg text-neutral-900 overflow-hidden">
-        <Outlet />
+        <div className="w-full h-full flex flex-row justify-end">
+          <Menu />
+          <div className="w-[calc(100%-20rem+1rem)] h-full text-white bg-sky-400">
+            <Outlet />
+          </div>
+        </div>
+
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
