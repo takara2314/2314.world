@@ -26,7 +26,7 @@ export default function Body() {
   );
 
   return (
-    <body className="w-dvw h-dvh text-lg text-neutral-900 overflow-hidden">
+    <body className="w-dvw h-dvh text-base md:text-lg text-neutral-900 overflow-hidden">
       <div className="w-full h-full flex flex-row justify-end">
         {!isPc && (
           <ModalBackground

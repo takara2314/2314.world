@@ -10,9 +10,7 @@ export default function Hero() {
         <div className="text-2xl font-bold">
           たからーん（濱口 宝）
         </div>
-        <div className="text-gray-500 text-base">
-          @takara2314
-        </div>
+        <div className="text-gray-500">@takara2314</div>
       </h1>
     </section>
   );

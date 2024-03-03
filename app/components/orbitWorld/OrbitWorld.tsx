@@ -27,7 +27,7 @@ export default function OrbitWorld() {
       </Canvas>
 
       <DetailWindow>
-        <h1 className="text-3xl font-bold mb-2">
+        <h1 className="text-2xl md:text-3xl font-bold mb-2">
           タカラーン（濱口 宝）
         </h1>
         <p>やっほー (ﾉ・ω・)ﾉ</p>
