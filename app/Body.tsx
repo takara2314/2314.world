@@ -39,8 +39,8 @@ export default function Body() {
         <div
           className={
             isPc
-              ? 'w-[calc(100%-20rem+1rem)] h-full text-white bg-sky-400'
-              : 'w-full h-full text-white bg-sky-400'
+              ? 'w-[calc(100%-20rem+1rem)] h-full bg-[#66d9ff]'
+              : 'w-full h-full bg-[#66d9ff]'
           }
         >
           <Outlet />
