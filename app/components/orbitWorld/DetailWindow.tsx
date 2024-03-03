@@ -1,8 +1,14 @@
-export default function Detail() {
+import { type ReactNode } from 'react';
+
+interface Props {
+  children: ReactNode;
+}
+
+export default function DetailWindow({ children }: Props) {
   return (
     <div
       className="
-        px-4 md:px-10 w-full md:w-[calc(100%-1rem)] h-64
+        px-4 md:px-10 w-full md:w-[calc(100%-1rem)] h-60
         flex flex-row justify-center
         absolute right-0 bottom-4 md:bottom-6
       "
@@ -14,7 +20,7 @@ export default function Detail() {
           overflow-x-auto
         "
       >
-        こんにちは！
+        {children}
       </main>
     </div>
   );

@@ -6,7 +6,7 @@ import {
 } from '@react-three/fiber';
 import { useRef, useState } from 'react';
 import * as THREE from 'three';
-import Detail from './Detail';
+import DetailWindow from './DetailWindow';
 
 export default function OrbitWorld() {
   return (
@@ -30,7 +30,23 @@ export default function OrbitWorld() {
         <Box position={[1.2, 0, 0]} />
       </Canvas>
 
-      <Detail />
+      <DetailWindow>
+        <h1 className="text-3xl font-bold mb-2">
+          タカラーン（濱口 宝）
+        </h1>
+        <p>やっほー (ﾉ・ω・)ﾉ</p>
+        <p>
+          気まぐれで生きている高専5年生(20歳)です！
+          幼少期にPCに興味を持ってから、PCと親友になりました。
+        </p>
+        <p>
+          気軽に 「
+          <span className="text-green-700">タカラーン</span>
+          」 や 「
+          <span className="text-green-700">たからん</span>」
+          と呼んでくれると嬉しいです！
+        </p>
+      </DetailWindow>
     </div>
   );
 }
