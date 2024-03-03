@@ -1,4 +1,4 @@
-import { motion, useMotionValue } from 'framer-motion';
+import { MotionValue, motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 import Copyright from './Copyright';
@@ -6,9 +6,12 @@ import Hero from './Hero';
 import PageSelector from './PageSelector';
 import SocialIcons from './SocialIcons';
 
-export default function Menu() {
+export interface Props {
+  x: MotionValue<number>;
+}
+
+export default function Menu({ x }: Props) {
   const isPc = useMediaQuery('(min-width: 768px)');
-  const x = useMotionValue(0);
 
   useEffect(() => {
     if (!isPc) {
