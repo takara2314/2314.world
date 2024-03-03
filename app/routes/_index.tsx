@@ -3,7 +3,7 @@ import {
   ThreeElements,
   useFrame,
 } from '@react-three/fiber';
-import type { MetaFunction } from '@remix-run/node';
+import type { MetaFunction } from '@remix-run/cloudflare';
 import { useRef, useState } from 'react';
 import * as THREE from 'three';
 
