@@ -12,6 +12,7 @@ import {
 import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/m-plus-2/wght.css';
 
+import { useMediaQuery } from 'usehooks-ts';
 import stylesheet from '~/tailwind.css';
 import Menu from './components/menu/Menu';
 
@@ -28,6 +29,8 @@ export const links: LinksFunction = () => {
 };
 
 export default function App() {
+  const isPc = useMediaQuery('(min-width: 768px)');
+
   return (
     <html lang="ja">
       <head>
@@ -48,7 +51,13 @@ export default function App() {
       <body className="w-dvw h-dvh text-lg text-neutral-900 overflow-hidden">
         <div className="w-full h-full flex flex-row justify-end">
           <Menu />
-          <div className="w-[calc(100%-20rem+1rem)] h-full text-white bg-sky-400">
+          <div
+            className={
+              isPc
+                ? 'w-[calc(100%-20rem+1rem)] h-full text-white bg-sky-400'
+                : 'w-full h-full text-white bg-sky-400'
+            }
+          >
             <Outlet />
           </div>
         </div>

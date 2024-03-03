@@ -24,7 +24,7 @@ export default function Menu() {
       dragConstraints={{ left: -500, right: 0 }}
       dragElastic={0}
       style={{ x }}
-      className="w-[20rem] h-full text-center bg-white rounded-r-2xl fixed top-0 left-0"
+      className="w-[20rem] h-full text-center bg-white rounded-r-2xl fixed top-0 left-0 z-30"
     >
       <Hero />
       <PageSelector />
