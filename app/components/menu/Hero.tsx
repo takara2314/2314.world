@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="mt-10 flex flex-col items-center">
       <img
-        src="/takaran.png"
+        src="/takaran.webp"
         alt="たからーん"
         className="w-[10rem] h-[10rem] mask mask-squircle"
       />
