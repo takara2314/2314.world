@@ -17,6 +17,7 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.0.16",
     "@fontsource-variable/m-plus-2": "^5.0.15",
+    "@react-three/drei": "^9.99.5",
     "@react-three/fiber": "^8.15.16",
     "@remix-run/cloudflare": "^2.7.2",
     "@remix-run/cloudflare-pages": "^2.7.2",

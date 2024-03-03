@@ -1,3 +1,4 @@
+import { CameraControls } from '@react-three/drei';
 import {
   Canvas,
   ThreeElements,
@@ -11,6 +12,7 @@ export default function OrbitWorld() {
   return (
     <div className="w-full h-full relative">
       <Canvas>
+        <CameraControls />
         <ambientLight intensity={Math.PI / 2} />
         <spotLight
           position={[10, 10, 10]}
