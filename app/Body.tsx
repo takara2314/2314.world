@@ -5,12 +5,8 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-import {
-  transform,
-  useSpring,
-  useTransform,
-} from 'framer-motion';
-import { useCallback, useEffect, useState } from 'react';
+import { useSpring, useTransform } from 'framer-motion';
+import { useCallback } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 import ModalBackground from './components/ModalBackground';
 import Menu from './components/menu/Menu';
