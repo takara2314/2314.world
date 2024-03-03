@@ -29,7 +29,12 @@ export default function Menu() {
       <Hero />
       <PageSelector />
 
-      <div className="pt-5 w-full border-t-2 border-gray-300 absolute bottom-4">
+      <div
+        className="
+          pt-5 pb-4 w-full bg-white border-t-2 border-gray-300
+          rounded-br-2xl absolute bottom-0
+        "
+      >
         <SocialIcons />
         <Copyright />
       </div>
