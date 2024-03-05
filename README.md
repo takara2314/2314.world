@@ -23,7 +23,7 @@
 [前作](https://github.com/takara2314/2314.tk)同様、何かのワールドに入ったかのようなデザインにしてみました。
 3Dゲームを作っているみたいで楽しかったです！
 
-[2314.world](https://2314.world/)
+[beta.2314.world](https://beta.2314.world/)
 
 ## 🛠 前提
 
